@@ -1,6 +1,6 @@
 [build]
   base = "LiteraryLounge.Frontend"
-  publish = "dist/literary-lounge-frontend"
+  publish = "dist/LiteraryLounge.Frontend"
   command = "npm install && ng build --configuration=production"
 
 [[redirects]]

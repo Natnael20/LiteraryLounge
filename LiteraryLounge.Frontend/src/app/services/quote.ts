@@ -13,7 +13,7 @@ export interface Quote {
   providedIn: 'root'
 })
 export class QuoteService {
-  private apiUrl = '/api/books';
+  private apiUrl = 'https://literarylounge-f5p5.onrender.com/api/quotes';
 
   constructor(private http: HttpClient) { }
 

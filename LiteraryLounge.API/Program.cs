@@ -1,5 +1,5 @@
 using LiteraryLounge.API.Services;
-using LiteraryLounge.API.Repository;
+using LiteraryLounge.API.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -26,16 +26,19 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// Add CORS
+// Add CORS - UPDATE THIS WITH YOUR NETLIFY URL
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularApp",
         policy =>
         {
-            policy.WithOrigins("http://localhost:4200")
-                  .AllowAnyHeader()
-                  .AllowAnyMethod()
-                  .AllowCredentials();
+            policy.WithOrigins(
+                "http://localhost:4200",
+                "https://warm-entremet-8d3cc8.netlify.app/"  // ← CHANGE THIS TO YOUR ACTUAL NETLIFY URL
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
         });
 });
 
@@ -54,8 +57,8 @@ builder.Services.AddSingleton<AuthService>();
 var app = builder.Build();
 
 app.UseCors("AllowAngularApp");
-app.UseAuthentication(); // Add this
-app.UseAuthorization();  // Add this
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 
 app.Run();

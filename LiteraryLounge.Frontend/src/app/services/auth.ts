@@ -24,7 +24,7 @@ export interface AuthResponse {
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = '/api/auth';
+  private apiUrl = 'https://literarylounge-f5p5.onrender.com/api/auth';
   private tokenKey = 'auth_token';
   private authStatus = new BehaviorSubject<boolean>(this.isLoggedIn());
 

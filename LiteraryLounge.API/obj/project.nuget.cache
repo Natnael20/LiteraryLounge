@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p6seMqA/HOM=",
+  "dgSpecHash": "x6jO4d0/R1c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\natuw\\documents\\vs\\LiteraryLounge\\LiteraryLounge.API\\LiteraryLounge.API.csproj",
+  "projectFilePath": "C:\\Users\\natuw\\Documents\\VS\\LiteraryLounge\\LiteraryLounge.API\\LiteraryLounge.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\natuw\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "C:\\Users\\natuw\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.0\\microsoft.aspnetcore.authentication.jwtbearer.9.0.0.nupkg.sha512",

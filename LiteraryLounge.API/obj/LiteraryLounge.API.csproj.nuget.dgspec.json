@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\natuw\\documents\\vs\\LiteraryLounge\\LiteraryLounge.API\\LiteraryLounge.API.csproj": {}
+    "C:\\Users\\natuw\\Documents\\VS\\LiteraryLounge\\LiteraryLounge.API\\LiteraryLounge.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natuw\\documents\\vs\\LiteraryLounge\\LiteraryLounge.API\\LiteraryLounge.API.csproj": {
+    "C:\\Users\\natuw\\Documents\\VS\\LiteraryLounge\\LiteraryLounge.API\\LiteraryLounge.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natuw\\documents\\vs\\LiteraryLounge\\LiteraryLounge.API\\LiteraryLounge.API.csproj",
+        "projectUniqueName": "C:\\Users\\natuw\\Documents\\VS\\LiteraryLounge\\LiteraryLounge.API\\LiteraryLounge.API.csproj",
         "projectName": "LiteraryLounge.API",
-        "projectPath": "C:\\Users\\natuw\\documents\\vs\\LiteraryLounge\\LiteraryLounge.API\\LiteraryLounge.API.csproj",
+        "projectPath": "C:\\Users\\natuw\\Documents\\VS\\LiteraryLounge\\LiteraryLounge.API\\LiteraryLounge.API.csproj",
         "packagesPath": "C:\\Users\\natuw\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natuw\\documents\\vs\\LiteraryLounge\\LiteraryLounge.API\\obj\\",
+        "outputPath": "C:\\Users\\natuw\\Documents\\VS\\LiteraryLounge\\LiteraryLounge.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\natuw\\AppData\\Roaming\\NuGet\\NuGet.Config"

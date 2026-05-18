@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: literary-lounge-api
+    runtime: dotnet
+    rootDir: LiteraryLounge.API
+    buildCommand: dotnet restore
+    startCommand: dotnet run --urls=http://0.0.0.0:10000
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ASPNETCORE_URLS
+        value: http://0.0.0.0:10000

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Open book -->
+  <path d="M25 30 L25 70 L50 78 L50 30 Z" fill="#4A90D9" opacity="0.8"/>
+  <path d="M75 30 L75 70 L50 78 L50 30 Z" fill="#4A90D9" opacity="0.8"/>
+  
+  <!-- Book lines -->
+  <line x1="32" y1="42" x2="45" y2="40" stroke="#fff" stroke-width="1.5"/>
+  <line x1="32" y1="50" x2="45" y2="48" stroke="#fff" stroke-width="1.5"/>
+  <line x1="32" y1="58" x2="42" y2="56" stroke="#fff" stroke-width="1.5"/>
+  
+  <line x1="55" y1="40" x2="68" y2="42" stroke="#fff" stroke-width="1.5"/>
+  <line x1="55" y1="48" x2="68" y2="50" stroke="#fff" stroke-width="1.5"/>
+  <line x1="55" y1="56" x2="65" y2="58" stroke="#fff" stroke-width="1.5"/>
+  
+  <!-- Quote mark -->
+  <text x="48" y="28" font-family="Georgia" font-size="14" fill="#F5A623" font-weight="bold">"</text>
+  
+  <!-- Small star -->
+  <polygon points="20,20 22,24 26,24 23,27 24,31 20,29 16,31 17,27 14,24 18,24" fill="#F5A623"/>
+</svg>

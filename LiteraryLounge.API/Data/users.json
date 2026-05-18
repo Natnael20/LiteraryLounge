@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "Username": "testuser",
+    "PasswordHash": "$2a$11$z62lYlIQTL/fom4qKjP3BOmgoKsAYgNCS.z6r2pqkAxH7NMvcD7VO",
+    "CreatedAt": "2026-05-12T14:13:33.0197956+02:00"
+  },
+  {
+    "Id": 2,
+    "Username": "novices",
+    "PasswordHash": "$2a$11$5fJS3kIGYVgAWkzEVC6oS.utEwuNJafMmZv90p4YPI7B80fF7kt4.",
+    "CreatedAt": "2026-05-13T16:14:23.437299+02:00"
+  }
+]

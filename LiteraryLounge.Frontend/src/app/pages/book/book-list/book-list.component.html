@@ -1,0 +1,114 @@
+<div class="container mt-4">
+    <!-- Book Details View -->
+    <div *ngIf="showBookDetails && selectedBook" class="card mb-3 border-0">
+        <div class="card-header bg-transparent">
+            <h3 class="mb-0 text-secondary">Book Details</h3>
+        </div>
+        <div class="card-body">
+            <div class="row mb-2">
+                <div class="col-4 fw-bold">Title:</div>
+                <div class="col-8">{{ selectedBook.title }}</div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-4 fw-bold">Author:</div>
+                <div class="col-8">{{ selectedBook.author }}</div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-4 fw-bold">ISBN:</div>
+                <div class="col-8">{{ selectedBook.isbn }}</div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 fw-bold">Year:</div>
+                <div class="col-8">{{ selectedBook.publishYear }}</div>
+            </div>
+            <button class="btn custom-button d-flex gap-2 align-items-center" (click)="hideDetails()">
+                <i class="fa fa-arrow-left"></i>
+                <span>Back</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Desktop Table View (visible on medium screens and up) -->
+    <div class="table-responsive d-none d-md-block" *ngIf="!showBookDetails">
+        <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+            <h3><i class="fa fa-book"></i> Books</h3>
+            <button class="btn custom-button d-flex gap-3 align-items-center" (click)="goToAddBook()">
+                <i class="fa fa-plus"></i>
+                <span>Add Book</span>
+            </button>
+        </div>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Year</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let book of books">
+                    <td>{{ book.id }}</td>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.isbn }}</td>
+                    <td>{{ book.publishYear }}</td>
+                    <td>
+                        <button class="btn btn-sm btn-info me-1" (click)="viewBookDetails(book.id!)" title="View">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="btn btn-sm btn-warning me-1" (click)="editBook(book.id!)" title="Edit">
+                            <i class="fa fa-edit"></i>
+                        </button>
+                        <button class="btn btn-sm btn-danger" (click)="deleteBook(book.id!)" title="Delete">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr *ngIf="books.length === 0">
+                    <td colspan="6" class="text-center py-4">
+                        <i class="fa fa-inbox fa-2x text-muted"></i>
+                        <p class="mt-2 mb-0">No books found. Click "Add Book" to get started!</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Mobile Card View (visible on small screens) -->
+    <div class="d-block d-md-none" *ngIf="!showBookDetails">
+        <div *ngFor="let book of books" class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title mb-0">{{ book.title }}</h5>
+                    <span class="badge bg-secondary">{{ book.publishYear }}</span>
+                </div>
+                <p class="card-text mb-1">
+                    <strong>Author:</strong> {{ book.author }}
+                </p>
+                <p class="card-text mb-2">
+                    <strong>ISBN:</strong> <code>{{ book.isbn }}</code>
+                </p>
+                <div class="btn-group w-100" role="group">
+                    <button class="btn btn-sm btn-info" (click)="viewBookDetails(book.id!)">
+                        <i class="fa fa-eye"></i> View
+                    </button>
+                    <button class="btn btn-sm btn-warning" (click)="editBook(book.id!)">
+                        <i class="fa fa-edit"></i> Edit
+                    </button>
+                    <button class="btn btn-sm btn-danger" (click)="deleteBook(book.id!)">
+                        <i class="fa fa-trash"></i> Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty state for mobile -->
+        <div *ngIf="books.length === 0" class="text-center py-5">
+            <i class="fa fa-inbox fa-3x text-muted"></i>
+            <p class="mt-3">No books found. Click "Add Book" to get started!</p>
+        </div>
+    </div>
+</div>

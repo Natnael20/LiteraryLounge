@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "Title": "Clean Code",
+    "Author": "Robert C. Martin",
+    "ISBN": "9780132350884",
+    "PublishYear": 2008
+  },
+  {
+    "Id": 2,
+    "Title": "The Pragmatic Programmer",
+    "Author": "David Thomas \u0026 Andrew Hunt",
+    "ISBN": "9780201616224",
+    "PublishYear": 1999
+  },
+  {
+    "Id": 3,
+    "Title": "The Yale Book of Quotations",
+    "Author": "Fred R. Shapiro (ed.)",
+    "ISBN": "9780300107982",
+    "PublishYear": 2006
+  }
+]

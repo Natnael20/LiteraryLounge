@@ -1,0 +1,42 @@
+<div class="container mt-5 justify-content-center align-items-center">
+    <div class="card border-0 p-3 mx-auto" style="max-width: 500px;">
+        <div class="card-header p-3 bg-transparent">
+            <h3 class="ms-2 opacity-75">Register</h3>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-danger rounded-2 p-3" *ngIf="errorMessage">
+                {{ errorMessage }}
+            </div>
+
+            <div class="alert alert-success rounded-2 p-3" *ngIf="successMessage">
+                {{ successMessage }}
+            </div>
+
+            <form (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                    <label class="form-label opacity-75">Username</label>
+                    <input type="text" class="form-control border-0 border-bottom border-2" [(ngModel)]="username" name="username" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label opacity-75">Password</label>
+                    <input type="password" class="form-control border-0 border-bottom border-2" [(ngModel)]="password" name="password" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label opacity-75">Confirm Password</label>
+                    <input type="password" class="form-control border-0 border-bottom border-2" [(ngModel)]="confirmPassword" name="confirmPassword" required>
+                </div>
+
+                <button type="submit" class="btn custom-button w-100 mt-5" [disabled]="loading">
+                    {{ loading ? 'Registering...' : 'Register' }}
+                </button>
+            </form>
+
+            <div class="text-center mt-3">
+                <a class="text-decoration-none underline" routerLink="/login">Already have an account? Login here</a>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

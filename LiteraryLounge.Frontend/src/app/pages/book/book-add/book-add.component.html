@@ -1,0 +1,46 @@
+<div class="container mt-4">
+    <div class="card border-0 p-3 mx-auto" style="max-width: 500px;">
+        <div class="card-header bg-transparent">
+            <h3 class="text-secondary">Add New Book</h3>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-success rounded-2 p-3" *ngIf="successMessage">
+                {{ successMessage }}
+            </div>
+            <div class="alert alert-danger rounded-2 p-3" *ngIf="errorMessage">
+                {{ errorMessage }}
+            </div>
+
+            <form (ngSubmit)="addBook()">
+                <div class="mb-3">
+                    <label class="form-label text-secondary">Title</label>
+                    <input type="text" class="form-control border-0 border-bottom border-2" [(ngModel)]="newBook.title" name="title" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-secondary">Author</label>
+                    <input type="text" class="form-control border-0 border-bottom border-2" [(ngModel)]="newBook.author" name="author" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-secondary">ISBN</label>
+                    <input type="text" class="form-control border-0 border-bottom border-2" [(ngModel)]="newBook.isbn" name="isbn" required>
+                    <small class="text-muted">ISBN-10 (10 digits) or ISBN-13 (13 digits)</small>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-secondary border-0 border-bottom border-2">Publish Year</label>
+                    <input type="number" class="form-control" [(ngModel)]="newBook.publishYear" name="publishYear" min="1000" [max]="currentYear" required>
+                </div>
+
+                <div class="d-flex mt-5 justify-content-between">
+                    <button type="button" class="btn custom-button d-flex gap-2 align-items-center" (click)="cancel()">
+                        <i class="fa fa-times"></i>
+                        <span>Cancel</span>
+                    </button>
+                    <button type="submit" class="btn custom-button">Save Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

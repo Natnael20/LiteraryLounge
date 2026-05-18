@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "Text": "The only way to do great work is to love what you do. Stay hungry, stay foolish.",
+    "Author": "Steve Jobs",
+    "Source": "Stanford Commencement Speech 2005"
+  },
+  {
+    "Id": 3,
+    "Text": "The greatest glory in living lies not in never falling, but in rising every time we fall",
+    "Author": "Nelson Mandela",
+    "Source": "Long Walk to Freedom"
+  },
+  {
+    "Id": 4,
+    "Text": "The only thing we have to fear is fear itself.\n",
+    "Author": "Franklin D. Roosevelt",
+    "Source": " First Inaugural Address"
+  },
+  {
+    "Id": 5,
+    "Text": "To be, or not to be: that is the question",
+    "Author": "William Shakespeare",
+    "Source": "Hamlet, Act III, Scene"
+  },
+  {
+    "Id": 6,
+    "Text": "Two roads diverged in a wood, and I\u2014\nI took the one less traveled by,\nAnd that has made all the difference",
+    "Author": "Robert Frost",
+    "Source": "The Road Not Taken"
+  },
+  {
+    "Id": 7,
+    "Text": "That\u2019s one small step for a man, one giant leap for mankind.",
+    "Author": "Neil Armstrong",
+    "Source": "Upon setting foot on the Moon"
+  }
+]

@@ -1,0 +1,20 @@
+# Frontend - only ignore node_modules
+LiteraryLounge.Frontend/node_modules/
+LiteraryLounge.Frontend/.angular/
+LiteraryLounge.Frontend/dist/
+LiteraryLounge.Frontend/package-lock.json
+
+# Backend - keep everything (no deletions)
+# Only ignore temporary files
+*.tmp
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS files
+.DS_Store
+Thumbs.db

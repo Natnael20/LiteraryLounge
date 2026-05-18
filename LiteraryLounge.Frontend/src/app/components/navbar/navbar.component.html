@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-sm" *ngIf="!isLandingPage">
+    <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand d-flex order-2 order-sm-0" (click)="onBrandClick()">
+            <img src="image.svg" alt="logo" class="img-fluid me-2" width="40" height="40">
+            <span class="logo fw-bolder" [ngClass]="{
+                        'd-block': isLoginOrRegisterPage(),
+                        'd-none d-sm-block': !isLoginOrRegisterPage()
+                    }">LitLog</span>
+        </a>
+        <button class="navbar-toggler border-0 p-0 order-1 order-sm-0" title="hamburgerMenu" type="button"
+            data-bs-toggle="collapse" data-bs-target="#hamburgerMenu" *ngIf="!isLoginOrRegisterPage()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center align-items-end order-last order-sm-1"
+            id="hamburgerMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a class="nav-link underline active " routerLink="/books" routerLinkActive="active">Books</a>
+                </li>
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a class="nav-link underline" routerLink="/quotes" routerLinkActive="active">Quotes</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-content d-flex justify-content-between align-items-center gap-3 order-3 order-sm-2">
+            <div class="dark-mode">
+                <a class="btn custom-button" (click)="toggleTheme()" title="Toggle Dark Mode">
+                    <i class="fa " [ngClass]="isDarkMode ? 'fa-sun-o' : 'fa-moon-o'"></i>
+                </a>
+            </div>
+            <div *ngIf="isLoggedIn">
+                <a class="nav-link underline" (click)="logout()" title="Log Out">Log Out</a>
+            </div>
+        </div>
+    </div>
+</nav>

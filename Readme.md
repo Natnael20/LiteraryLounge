@@ -91,6 +91,10 @@ Route guards for protected pages
 | Font Awesome   | 4.7.0        | Icons                  |
 | TypeScript     | 5.9.2        | Programming Language   |
 
+## Deployment
+
+The frontend is deployed in netlify: 
+The backend is deployed in render: 
 
 ## Validation Rules
 

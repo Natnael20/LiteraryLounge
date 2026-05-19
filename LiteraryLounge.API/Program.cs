@@ -34,7 +34,7 @@ builder.Services.AddCors(options =>
         {
             policy.WithOrigins(
                 "http://localhost:4200",
-                "https://YOUR_NETLIFY_URL.netlify.app"  // Add your Netlify URL
+                "https://litlog.netlify.app"
             )
             .AllowAnyHeader()
             .AllowAnyMethod()

@@ -14,7 +14,7 @@ export interface Book {
   providedIn: 'root'
 })
 export class BookService {
-  private apiUrl = 'https://warm-entremet-8d3cc8.netlify.app/api/books';
+  private apiUrl = 'https://litlog.netlify.app/api/books';
 
   constructor(private http: HttpClient) { }
 

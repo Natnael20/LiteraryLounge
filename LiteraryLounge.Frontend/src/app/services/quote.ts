@@ -13,7 +13,7 @@ export interface Quote {
   providedIn: 'root'
 })
 export class QuoteService {
-  private apiUrl = 'https://warm-entremet-8d3cc8.netlify.app/api/quotes';
+  private apiUrl = 'https://litlog.netlify.app/api/quotes';
 
   constructor(private http: HttpClient) { }
 

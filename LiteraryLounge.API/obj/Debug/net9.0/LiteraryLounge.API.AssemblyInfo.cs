@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LiteraryLounge.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c5efb3d7891627f45b3d0df676fe4fd4e503130")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85ef99db2dda3e3679052d43086fe676d5009697")]
 [assembly: System.Reflection.AssemblyProductAttribute("LiteraryLounge.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LiteraryLounge.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

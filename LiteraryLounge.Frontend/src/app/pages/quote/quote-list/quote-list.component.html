@@ -34,15 +34,18 @@
                             <cite *ngIf="quote.source"> - {{ quote.source }}</cite>
                         </footer>
                     </blockquote>
-                    <div class="mt-3">
-                        <button title="view" class="btn btn-sm btn-info me-1" (click)="viewQuoteDetails(quote.id!)">
+                    <div class="btn-group w-100 d-flex gap-3 mt-5" role="group">
+                        <button title="view" class="btn btn-sm btn-info d-flex justify-content-center align-items-center align-items-center gap-2" (click)="viewQuoteDetails(quote.id!)">
                             <i class="fa fa-eye"></i>
+                            <span>View</span>
                         </button>
-                        <button title="edit" class="btn btn-sm btn-warning me-1" (click)="editQuote(quote.id!)">
+                        <button title="edit" class="btn btn-sm btn-warning d-flex justify-content-center align-items-center gap-2 me-1" (click)="editQuote(quote.id!)">
                             <i class="fa fa-edit"></i>
+                            <span>Edit</span>
                         </button>
-                        <button title="delete" class="btn btn-sm btn-danger" (click)="deleteQuote(quote.id!)">
+                        <button title="delete" class="btn btn-sm btn-danger d-flex justify-content-center align-items-center gap-2" (click)="deleteQuote(quote.id!)">
                             <i class="fa fa-trash"></i>
+                            <span>Delete</span>
                         </button>
                     </div>
                 </div>
